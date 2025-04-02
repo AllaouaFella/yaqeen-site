@@ -11,36 +11,43 @@
         <nav class="sticky">
             <div class="logo">Yaqeen</div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="investments.html">Investments</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="index.html" data-en="Home" data-fr="Accueil">Home</a></li>
+                <li><a href="investments.html" data-en="Investments" data-fr="Investissements">Investments</a></li>
+                <li><a href="dashboard.html" data-en="Dashboard" data-fr="Tableau de bord">Dashboard</a></li>
+                <li>
+                    <select id="language-switcher">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="investments">
-            <h1>Choose Your Investment</h1>
+            <h1 data-en="Choose Your Investment" data-fr="Choisissez Votre Investissement">Choose Your Investment</h1>
             <div class="options-container">
                 <div class="option-card">
-                    <h2>Factory</h2>
-                    <p>Invest in manufacturing growth from $500.</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                    <h2 data-en="Factory" data-fr="Usine">Factory</h2>
+                    <p data-en="Invest in manufacturing growth from $500." data-fr="Investissez dans la croissance manufacturière à partir de 500 $.">Invest in manufacturing growth from $500.</p>
+                    <a href="#" class="learn-more" data-en="Learn More" data-fr="En savoir plus">Learn More</a>
                 </div>
                 <div class="option-card">
-                    <h2>Real Estate</h2>
-                    <p>Secure your wealth with property from $500.</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                    <h2 data-en="Real Estate" data-fr="Immobilier">Real Estate</h2>
+                    <p data-en="Secure your wealth with property from $500." data-fr="Sécurisez votre richesse avec des propriétés à partir de 500 $.">Secure your wealth with property from $500.</p>
+                    <a href="#" class="learn-more" data-en="Learn More" data-fr="En savoir plus">Learn More</a>
                 </div>
                 <div class="option-card">
-                    <h2>Agriculture</h2>
-                    <p>Support sustainable farming from $500.</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                    <h2 data-en="Agriculture" data-fr="Agriculture">Agriculture</h2>
+                    <p data-en="Support sustainable farming from $500." data-fr="Soutenez l'agriculture durable à partir de 500 $.">Support sustainable farming from $500.</p>
+                    <a href="#" class="learn-more" data-en="Learn More" data-fr="En savoir plus">Learn More</a>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>© 2025 Yaqeen Investments | <a href="#">About</a> | <a href="#">Contact</a></p>
+        <p>© 2025 Yaqeen Investments | <a href="#" data-en="About" data-fr="À propos">About</a> | <a href="#" data-en="Contact" data-fr="Contact">Contact</a></p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
