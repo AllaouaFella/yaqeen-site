@@ -11,33 +11,40 @@
         <nav class="sticky">
             <div class="logo">Yaqeen</div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="investments.html">Investments</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="index.html" data-en="Home" data-fr="Accueil">Home</a></li>
+                <li><a href="investments.html" data-en="Investments" data-fr="Investissements">Investments</a></li>
+                <li><a href="dashboard.html" data-en="Dashboard" data-fr="Tableau de bord">Dashboard</a></li>
+                <li>
+                    <select id="language-switcher">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="dashboard">
-            <h1>Your Dashboard</h1>
+            <h1 data-en="Your Dashboard" data-fr="Votre Tableau de bord">Your Dashboard</h1>
             <div class="stats-container">
                 <div class="stat-card">
-                    <h3>Total Investment</h3>
+                    <h3 data-en="Total Investment" data-fr="Investissement Total">Total Investment</h3>
                     <p>$500</p>
                 </div>
                 <div class="stat-card">
-                    <h3>Annual Return</h3>
+                    <h3 data-en="Annual Return" data-fr="Rendement Annuel">Annual Return</h3>
                     <p>5%</p>
                 </div>
                 <div class="stat-card">
-                    <h3>Earnings</h3>
+                    <h3 data-en="Earnings" data-fr="Gains">Earnings</h3>
                     <p>$25</p>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>© 2025 Yaqeen Investments | <a href="#">About</a> | <a href="#">Contact</a></p>
+        <p>© 2025 Yaqeen Investments | <a href="#" data-en="About" data-fr="À propos">About</a> | <a href="#" data-en="Contact" data-fr="Contact">Contact</a></p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
