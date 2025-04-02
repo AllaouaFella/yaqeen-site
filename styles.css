@@ -35,6 +35,7 @@ body {
 nav ul {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 nav ul li {
@@ -51,6 +52,22 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #2ecc71;
+}
+
+/* Language Switcher */
+#language-switcher {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#language-switcher:hover {
+    background-color: #27ae60;
 }
 
 /* Hero Section */
