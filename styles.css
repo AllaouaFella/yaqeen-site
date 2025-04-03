@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     background-color: #f5f5f5;
     color: #333;
+    overflow-x: hidden;
 }
 
 /* Sticky Navigation */
@@ -181,19 +182,47 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
+/* Investments Hero */
+.investments-hero {
+    position: relative;
+    height: 50vh;
+    background: linear-gradient(135deg, rgba(26, 60, 52, 0.9), rgba(46, 204, 113, 0.9)), url('invest-bg.jpg') no-repeat center center / cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 4rem;
+}
+
+.investments-hero h1 {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.investments-hero p {
+    font-size: 1.6rem;
+    opacity: 0.9;
+}
+
 /* Investments Section */
 .investments {
     padding: 8rem 4rem;
     text-align: center;
-    background: linear-gradient(180deg, #f5f5f5, #e8ecef);
+    background: url('texture-bg.png') repeat, linear-gradient(180deg, #f5f5f5, #e8ecef);
+    background-size: 200px 200px;
 }
 
 .investments-header {
     margin-bottom: 5rem;
 }
 
-.investments h1 {
-    font-size: 4.5rem;
+.investments-header h2 {
+    font-size: 3.5rem;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     margin-bottom: 1.5rem;
@@ -220,7 +249,7 @@ nav ul li a:hover {
 
 .option-card {
     position: relative;
-    background: white;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
     padding: 3.5rem;
     width: 100%;
     max-width: 380px;
@@ -241,6 +270,11 @@ nav ul li a:hover {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
+.option-card:hover .option-icon {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
+}
+
 .option-overlay {
     position: absolute;
     top: 0;
@@ -257,9 +291,10 @@ nav ul li a:hover {
     margin-bottom: 2rem;
     position: relative;
     z-index: 1;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.option-card h2 {
+.option-card h3 {
     font-size: 2.5rem;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -280,11 +315,12 @@ nav ul li a:hover {
 .risk-level {
     display: block;
     font-size: 1.1rem;
-    color: #2ecc71;
+    color: #FFD700; /* Gold accent */
     margin-bottom: 2.5rem;
     font-weight: 600;
     position: relative;
     z-index: 1;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .invest-btn {
@@ -306,11 +342,26 @@ nav ul li a:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
+.testimonial {
+    margin-top: 6rem;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #1a3c34;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
 /* Dashboard Section */
 .dashboard {
     padding: 8rem 4rem;
     text-align: center;
-    background: linear-gradient(180deg, #fff, #f5f5f5);
+    background: url('texture-bg.png') repeat, linear-gradient(180deg, #fff, #f5f5f5);
+    background-size: 200px 200px;
 }
 
 .dashboard-header {
@@ -332,6 +383,27 @@ nav ul li a:hover {
     color: #555;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.profile-card {
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    margin: 0 auto 4rem;
+}
+
+.profile-card h3 {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    color: #1a3c34;
+    margin-bottom: 1rem;
+}
+
+.profile-card p {
+    font-size: 1.2rem;
+    color: #666;
 }
 
 .currency-toggle {
@@ -385,9 +457,10 @@ nav ul li a:hover {
 
 .stat-card h3 {
     font-size: 1.6rem;
-    color: #2ecc71;
+    color: #FFD700; /* Gold accent */
     margin-bottom: 1.5rem;
     font-weight: 600;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .stat-card p {
@@ -413,6 +486,7 @@ nav ul li a:hover {
 .pie-chart {
     flex: 1;
     min-width: 350px;
+    position: relative;
 }
 
 .pie-chart h3 {
@@ -427,6 +501,12 @@ nav ul li a:hover {
     max-width: 100%;
     border-radius: 20px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.pie-chart:hover .chart-image {
+    transform: scale(1.02);
+    filter: drop-shadow(0 6px 15px rgba(46, 204, 113, 0.3));
 }
 
 .wealth-projector {
@@ -459,11 +539,12 @@ nav ul li a:hover {
     border-radius: 10px;
     font-size: 1.2rem;
     background: #fafafa;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .wealth-projector input:focus {
     border-color: #2ecc71;
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.3);
     outline: none;
 }
 
@@ -527,15 +608,18 @@ footer a:hover {
     to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes countUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero h1 { font-size: 3.5rem; }
-    .tagline { font-size: 1.5rem; }
+    .hero h1, .investments-hero h1, .dashboard h1 { font-size: 3.5rem; }
+    .tagline, .investments-hero p, .dashboard-header p { font-size: 1.3rem; }
     .cta-btn, .secondary-btn { padding: 1.2rem 3rem; font-size: 1.3rem; }
     .hero-buttons { flex-direction: column; gap: 1.5rem; }
     .investments, .dashboard { padding: 5rem 2rem; }
-    .investments h1, .dashboard h1 { font-size: 3.5rem; }
-    .investments-header p, .dashboard-header p { font-size: 1.3rem; }
     .option-card, .stat-card { width: 100%; max-width: 90%; margin-bottom: 3rem; }
     .dashboard-tools { flex-direction: column; gap: 3rem; }
     nav ul { flex-direction: column; text-align: center; }
