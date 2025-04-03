@@ -6,6 +6,7 @@
     <title>Dashboard - Yaqeen Investments</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -26,38 +27,43 @@
     </header>
     <main>
         <section class="dashboard">
-            <h1 data-en="Your Wealth Journey" data-fr="Votre Parcours de Richesse">Your Wealth Journey</h1>
+            <div class="dashboard-header">
+                <h1 data-en="Your Financial Legacy" data-fr="Votre Héritage Financier">Your Financial Legacy</h1>
+                <p data-en="Monitor and grow your wealth with precision." data-fr="Surveillez et faites croître votre richesse avec précision.">Monitor and grow your wealth with precision.</p>
+            </div>
             <div class="currency-toggle">
                 <button onclick="toggleCurrency('USD')" class="currency-btn active" data-en="USD" data-fr="USD">USD</button>
                 <button onclick="toggleCurrency('DZD')" class="currency-btn" data-en="DZD" data-fr="DZD">DZD</button>
             </div>
             <div class="stats-container" id="stats-container">
                 <div class="stat-card">
-                    <h3 data-en="Total Invested" data-fr="Total Investi">Total Invested</h3>
-                    <p class="usd">$2,500</p>
-                    <p class="dzd hidden">337,500 DZD</p>
+                    <h3 data-en="Capital Invested" data-fr="Capital Investi">Capital Invested</h3>
+                    <p class="usd">$5,000</p>
+                    <p class="dzd hidden">675,000 DZD</p>
                 </div>
                 <div class="stat-card">
-                    <h3 data-en="Growth Rate" data-fr="Taux de Croissance">Growth Rate</h3>
-                    <p>8.5%</p>
+                    <h3 data-en="Annual Yield" data-fr="Rendement Annuel">Annual Yield</h3>
+                    <p>9.2%</p>
                 </div>
                 <div class="stat-card">
-                    <h3 data-en="Total Gains" data-fr="Gains Totaux">Total Gains</h3>
-                    <p class="usd">$212.50</p>
-                    <p class="dzd hidden">28,687.50 DZD</p>
+                    <h3 data-en="Profit Realized" data-fr="Profit Réalisé">Profit Realized</h3>
+                    <p class="usd">$460</p>
+                    <p class="dzd hidden">62,100 DZD</p>
                 </div>
             </div>
-            <div class="portfolio-visuals">
+            <div class="dashboard-tools">
                 <div class="pie-chart">
-                    <h3 data-en="Portfolio Breakdown" data-fr="Répartition du Portefeuille">Portfolio Breakdown</h3>
+                    <h3 data-en="Asset Allocation" data-fr="Allocation des Actifs">Asset Allocation</h3>
                     <img src="pie-chart.png" alt="Portfolio Pie Chart" class="chart-image">
                 </div>
-                <div class="growth-simulator">
-                    <h3 data-en="Wealth Simulator" data-fr="Simulateur de Richesse">Wealth Simulator</h3>
-                    <input type="number" id="investment" placeholder="Investment" min="1">
-                    <input type="number" id="rate" placeholder="Rate (%)" min="0" max="100" step="0.1">
-                    <input type="number" id="years" placeholder="Years" min="1" max="50">
-                    <button onclick="simulateGrowth()" data-en="Project Growth" data-fr="Projeter la Croissance">Project Growth</button>
+                <div class="wealth-projector">
+                    <h3 data-en="Wealth Projector" data-fr="Projecteur de Richesse">Wealth Projector</h3>
+                    <div class="projector-inputs">
+                        <input type="number" id="investment" placeholder="Capital" min="1">
+                        <input type="number" id="rate" placeholder="Yield (%)" min="0" max="100" step="0.1">
+                        <input type="number" id="years" placeholder="Years" min="1" max="50">
+                    </div>
+                    <button onclick="simulateGrowth()" data-en="Project Wealth" data-fr="Projeter la Richesse">Project Wealth</button>
                     <p id="result" data-en="Projected Value: $0" data-fr="Valeur Projetée : 0 $">Projected Value: $0</p>
                 </div>
             </div>
