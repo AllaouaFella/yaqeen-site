@@ -26,7 +26,7 @@
     </header>
     <main>
         <section class="dashboard">
-            <h1 data-en="Your Dashboard" data-fr="Votre Tableau de bord">Your Dashboard</h1>
+            <h1 data-en="Your Investment Empire" data-fr="Votre Empire d’Investissement">Your Investment Empire</h1>
             <div class="currency-toggle">
                 <button onclick="toggleCurrency('USD')" class="currency-btn active" data-en="USD" data-fr="USD">USD</button>
                 <button onclick="toggleCurrency('DZD')" class="currency-btn" data-en="DZD" data-fr="DZD">DZD</button>
@@ -34,29 +34,30 @@
             <div class="stats-container" id="stats-container">
                 <div class="stat-card">
                     <h3 data-en="Total Investment" data-fr="Investissement Total">Total Investment</h3>
-                    <p class="usd">$500</p>
-                    <p class="dzd hidden">67,500 DZD</p>
+                    <p class="usd">$1,000</p>
+                    <p class="dzd hidden">135,000 DZD</p>
                 </div>
                 <div class="stat-card">
                     <h3 data-en="Annual Return" data-fr="Rendement Annuel">Annual Return</h3>
-                    <p>5%</p>
+                    <p>7%</p>
                 </div>
                 <div class="stat-card">
                     <h3 data-en="Earnings" data-fr="Gains">Earnings</h3>
-                    <p class="usd">$25</p>
-                    <p class="dzd hidden">3,375 DZD</p>
+                    <p class="usd">$70</p>
+                    <p class="dzd hidden">9,450 DZD</p>
                 </div>
             </div>
             <div class="pie-chart">
-                <h3 data-en="Portfolio Allocation" data-fr="Répartition du Portefeuille">Portfolio Allocation</h3>
+                <h3 data-en="Your Portfolio" data-fr="Votre Portefeuille">Your Portfolio</h3>
                 <img src="pie-chart.png" alt="Portfolio Pie Chart" class="chart-image">
             </div>
             <div class="calculator">
-                <h3 data-en="Returns Calculator" data-fr="Calculateur de Rendements">Returns Calculator</h3>
-                <input type="number" id="investment" placeholder="Enter Investment" min="1">
+                <h3 data-en="Growth Simulator" data-fr="Simulateur de Croissance">Growth Simulator</h3>
+                <input type="number" id="investment" placeholder="Investment Amount" min="1">
                 <input type="number" id="rate" placeholder="Annual Rate (%)" min="0" max="100" step="0.1">
-                <button onclick="calculateReturns()" data-en="Calculate" data-fr="Calculer">Calculate</button>
-                <p id="result" data-en="Estimated Earnings: $0" data-fr="Gains Estimés : 0 $">Estimated Earnings: $0</p>
+                <input type="number" id="years" placeholder="Years" min="1" max="50">
+                <button onclick="simulateGrowth()" data-en="Simulate" data-fr="Simuler">Simulate</button>
+                <p id="result" data-en="Future Value: $0" data-fr="Valeur Future : 0 $">Future Value: $0</p>
             </div>
         </section>
     </main>
