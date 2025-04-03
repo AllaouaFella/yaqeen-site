@@ -42,24 +42,9 @@
                     <p class="currency-value" data-usd="652.50" data-dzd="88087.50">$652.50</p>
                 </div>
             </div>
-            <div class="dashboard-tools">
-                <div class="risk-assessment">
-                    <h3 data-en="Risk Assessment" data-fr="Évaluation des Risques">Risk Assessment</h3>
-                    <select id="investment-type">
-                        <option value="manufacturing">Manufacturing</option>
-                        <option value="real-estate">Real Estate</option>
-                        <option value="agriculture">Agriculture</option>
-                        <option value="health">Health Sector</option>
-                    </select>
-                    <p id="risk-result" data-en="Select an investment to assess risk." data-fr="Sélectionnez un investissement pour évaluer le risque.">Select an investment to assess risk.</p>
-                </div>
-                <div class="growth-calculator">
-                    <h3 data-en="Growth Calculator" data-fr="Calculateur de Croissance">Growth Calculator</h3>
-                    <input type="number" id="investment" placeholder="Amount" min="1">
-                    <input type="number" id="rate" placeholder="Rate (%)" min="0" max="100" step="0.1">
-                    <button onclick="calculateGrowth()" data-en="Calculate" data-fr="Calculer">Calculate</button>
-                    <p id="growth-result" data-en="Projected Growth: $0" data-fr="Croissance Projetée : 0 $">Projected Growth: $0</p>
-                </div>
+            <div class="portfolio-details">
+                <h3 data-en="Portfolio Breakdown" data-fr="Répartition du Portefeuille">Portfolio Breakdown</h3>
+                <img src="pie-chart.png" alt="Portfolio Pie Chart" class="chart-image">
             </div>
         </section>
     </main>
