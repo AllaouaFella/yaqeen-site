@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.forEach(element => {
             element.textContent = element.getAttribute(`data-${lang}`);
         });
+        animateStats(); // Re-animate stats on language change
     }
 
     // Set initial language to English
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSimulatorResult(selectedLang);
     });
 
-    // Countdown timer (e.g., 60 days from April 03, 2025)
+    // Countdown timer (60 days from April 03, 2025)
     const endDate = new Date('June 02, 2025 00:00:00').getTime();
     function updateCountdown(lang) {
         const now = new Date().getTime();
@@ -45,10 +46,40 @@ document.addEventListener('DOMContentLoaded', () => {
             usdElements.forEach(el => el.classList.remove('hidden'));
             dzdElements.forEach(el => el.classList.add('hidden'));
         } else {
-            usdElements.forEach(el => el.classList.remove('hidden'));
-            dzdElements.forEach(el => el.classList.add('hidden'));
+            usdElements.forEach(el => el.classList.add('hidden'));
+            dzdElements.forEach(el => el.classList.remove('hidden'));
         }
+        animateStats(); // Re-animate stats on currency change
     };
+
+    // Animate stats
+    function animateStats() {
+        const statElements = document.querySelectorAll('.stat-card p[data-value]');
+        statElements.forEach(el => {
+            const target = parseFloat(el.getAttribute('data-value'));
+            let current = 0;
+            const increment = target / 50; // 50 steps for smooth animation
+            const duration = 1500; // 1.5 seconds
+            const stepTime = duration / 50;
+            el.style.animation = 'none'; // Reset animation
+            void el.offsetWidth; // Trigger reflow
+            el.style.animation = `countUp 0.8s ease forwards`;
+
+            const updateCount = () => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                el.textContent = el.classList.contains('usd') || el.classList.contains('dzd') ?
+                    (el.classList.contains('usd') ? `$${current.toFixed(2)}` : `${current.toFixed(2)} DZD`) :
+                    `${current.toFixed(1)}%`;
+            };
+            const timer = setInterval(updateCount, stepTime);
+            updateCount();
+        });
+    }
+    animateStats(); // Initial animation on load
 });
 
 // Growth simulator function
@@ -62,14 +93,14 @@ function simulateGrowth() {
     const lang = document.getElementById('language-switcher').value;
     const currency = document.querySelector('.currency-btn.active').textContent;
     result.textContent = currency === 'USD' ?
-        (lang === 'en' ? `Future Value: $${futureValueUSD.toFixed(2)}` : `Valeur Future : ${futureValueUSD.toFixed(2)} $`) :
-        (lang === 'en' ? `Future Value: ${futureValueDZD.toFixed(2)} DZD` : `Valeur Future : ${futureValueDZD.toFixed(2)} DZD`);
+        (lang === 'en' ? `Projected Value: $${futureValueUSD.toFixed(2)}` : `Valeur Projetée : ${futureValueUSD.toFixed(2)} $`) :
+        (lang === 'en' ? `Projected Value: ${futureValueDZD.toFixed(2)} DZD` : `Valeur Projetée : ${futureValueDZD.toFixed(2)} DZD`);
 }
 
 function updateSimulatorResult(lang) {
     const result = document.getElementById('result');
     const currentText = result.textContent;
     if (currentText.includes('$') || currentText.includes('DZD')) {
-        result.textContent = lang === 'en' ? currentText.replace('Valeur Future', 'Future Value') : currentText.replace('Future Value', 'Valeur Future');
+        result.textContent = lang === 'en' ? currentText.replace('Valeur Projetée', 'Projected Value') : currentText.replace('Projected Value', 'Valeur Projetée');
     }
 }
