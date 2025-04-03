@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Yaqeen Investments</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -43,6 +44,13 @@
             <div class="pie-chart">
                 <h3 data-en="Portfolio Allocation" data-fr="Répartition du Portefeuille">Portfolio Allocation</h3>
                 <img src="pie-chart.png" alt="Portfolio Pie Chart" class="chart-image">
+            </div>
+            <div class="calculator">
+                <h3 data-en="Returns Calculator" data-fr="Calculateur de Rendements">Returns Calculator</h3>
+                <input type="number" id="investment" placeholder="Enter Investment ($)" min="1">
+                <input type="number" id="rate" placeholder="Annual Rate (%)" min="0" max="100" step="0.1">
+                <button onclick="calculateReturns()" data-en="Calculate" data-fr="Calculer">Calculate</button>
+                <p id="result" data-en="Estimated Earnings: $0" data-fr="Gains Estimés : 0 $">Estimated Earnings: $0</p>
             </div>
         </section>
     </main>
