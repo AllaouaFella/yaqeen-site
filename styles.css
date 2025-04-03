@@ -76,7 +76,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     height: 80vh;
-    background: linear-gradient(135deg, rgba(26, 60, 52, 0.9), rgba(46, 204, 113, 0.9)), url('hero-bg.jpg') no-repeat center center / cover;
+    background: linear-gradient(135deg, rgba(26, 60, 52, 0.9), rgba(46, 204, 113, 0.9)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center / cover;
     color: white;
     display: flex;
     flex-direction: column;
@@ -187,7 +187,7 @@ nav ul li a:hover {
 /* Investments Hero */
 .investments-hero {
     height: 60vh;
-    background: linear-gradient(135deg, rgba(26, 60, 52, 0.9), rgba(46, 204, 113, 0.9)), url('invest-bg.jpg') no-repeat center center / cover;
+    background: linear-gradient(135deg, rgba(26, 60, 52, 0.9), rgba(46, 204, 113, 0.9)), url('https://images.unsplash.com/photo-1560518883-e4d6e2e399db') no-repeat center center / cover;
     color: white;
     display: flex;
     flex-direction: column;
