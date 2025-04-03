@@ -76,7 +76,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     min-height: 85vh;
-    background: linear-gradient(135deg, rgba(26, 60, 52, 0.85), rgba(46, 204, 113, 0.85)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center / cover;
+    background: linear-gradient(135deg, rgba(26, 60, 52, 0.6), rgba(46, 204, 113, 0.6)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center / cover;
     color: #fff;
     display: flex;
     align-items: center;
@@ -401,4 +401,5 @@ footer a:hover {
     .hero h1 { font-size: 2rem; }
     .tagline { font-size: 1rem; }
     .cta-btn { padding: 0.7rem 1.5rem; font-size: 0.9rem; }
-    .insights, .investments, .dashboard
+    .insights, .investments, .dashboard { padding: 3rem 1rem; }
+}
