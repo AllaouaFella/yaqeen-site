@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedLang = e.target.value;
         updateLanguage(selectedLang);
         updateCountdown(selectedLang);
-        updateCalculatorResult(selectedLang);
+        updateSimulatorResult(selectedLang);
     });
 
-    // Countdown timer (e.g., 30 days from April 03, 2025)
-    const endDate = new Date('May 03, 2025 00:00:00').getTime();
+    // Countdown timer (e.g., 60 days from April 03, 2025)
+    const endDate = new Date('June 02, 2025 00:00:00').getTime();
     function updateCountdown(lang) {
         const now = new Date().getTime();
         const distance = endDate - now;
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const countdown = document.getElementById('countdown');
-        countdown.textContent = `${lang === 'en' ? 'Time to Act: ' : 'Temps d’agir : '}${days}d ${hours}h ${minutes}m`;
+        countdown.textContent = `${lang === 'en' ? 'Join Before: ' : 'Rejoignez Avant : '}${days}d ${hours}h ${minutes}m`;
     }
     setInterval(() => updateCountdown(languageSwitcher.value), 60000); // Update every minute
     updateCountdown('en');
@@ -45,30 +45,31 @@ document.addEventListener('DOMContentLoaded', () => {
             usdElements.forEach(el => el.classList.remove('hidden'));
             dzdElements.forEach(el => el.classList.add('hidden'));
         } else {
-            usdElements.forEach(el => el.classList.add('hidden'));
-            dzdElements.forEach(el => el.classList.remove('hidden'));
+            usdElements.forEach(el => el.classList.remove('hidden'));
+            dzdElements.forEach(el => el.classList.add('hidden'));
         }
     };
 });
 
-// Calculator function
-function calculateReturns() {
+// Growth simulator function
+function simulateGrowth() {
     const investment = parseFloat(document.getElementById('investment').value) || 0;
     const rate = parseFloat(document.getElementById('rate').value) || 0;
-    const earningsUSD = (investment * rate) / 100;
-    const earningsDZD = earningsUSD * 135; // Assuming 1 USD = 135 DZD
+    const years = parseInt(document.getElementById('years').value) || 0;
+    const futureValueUSD = investment * Math.pow(1 + rate / 100, years);
+    const futureValueDZD = futureValueUSD * 135; // 1 USD = 135 DZD
     const result = document.getElementById('result');
     const lang = document.getElementById('language-switcher').value;
     const currency = document.querySelector('.currency-btn.active').textContent;
     result.textContent = currency === 'USD' ?
-        (lang === 'en' ? `Estimated Earnings: $${earningsUSD.toFixed(2)}` : `Gains Estimés : ${earningsUSD.toFixed(2)} $`) :
-        (lang === 'en' ? `Estimated Earnings: ${earningsDZD.toFixed(2)} DZD` : `Gains Estimés : ${earningsDZD.toFixed(2)} DZD`);
+        (lang === 'en' ? `Future Value: $${futureValueUSD.toFixed(2)}` : `Valeur Future : ${futureValueUSD.toFixed(2)} $`) :
+        (lang === 'en' ? `Future Value: ${futureValueDZD.toFixed(2)} DZD` : `Valeur Future : ${futureValueDZD.toFixed(2)} DZD`);
 }
 
-function updateCalculatorResult(lang) {
+function updateSimulatorResult(lang) {
     const result = document.getElementById('result');
     const currentText = result.textContent;
-    if (currentText.includes('$')) {
-        result.textContent = lang === 'en' ? currentText.replace('Gains Estimés', 'Estimated Earnings') : currentText.replace('Estimated Earnings', 'Gains Estimés');
+    if (currentText.includes('$') || currentText.includes('DZD')) {
+        result.textContent = lang === 'en' ? currentText.replace('Valeur Future', 'Future Value') : currentText.replace('Future Value', 'Valeur Future');
     }
 }
