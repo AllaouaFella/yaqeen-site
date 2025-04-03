@@ -8,8 +8,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f9fafb;
-    color: #1f2937;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 /* Sticky Navigation */
@@ -17,7 +17,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #003087;
+    background-color: #1a3c34;
     padding: 1.5rem 3rem;
     display: flex;
     justify-content: space-between;
@@ -51,12 +51,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00C4B4;
+    color: #2ecc71;
 }
 
 /* Language Switcher */
 #language-switcher {
-    background-color: #00C4B4;
+    background-color: #2ecc71;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -67,13 +67,13 @@ nav ul li a:hover {
 }
 
 #language-switcher:hover {
-    background-color: #00a896;
+    background-color: #27ae60;
 }
 
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, rgba(0, 48, 135, 0.8), rgba(0, 196, 180, 0.8)), url('hero-bg.jpg') no-repeat center center / cover;
+    background: linear-gradient(135deg, rgba(26, 60, 52, 0.8), rgba(46, 204, 113, 0.8)), url('algeria-bg.jpg') no-repeat center center / cover;
     color: white;
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@ nav ul li a:hover {
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 900px;
 }
 
 .hero h1 {
@@ -95,7 +95,7 @@ nav ul li a:hover {
 }
 
 .tagline {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 2.5rem;
     opacity: 0.9;
 }
@@ -106,7 +106,7 @@ nav ul li a:hover {
 }
 
 .cta-btn {
-    background-color: #00C4B4;
+    background-color: #2ecc71;
     color: white;
     padding: 1.2rem 3rem;
     text-decoration: none;
@@ -118,7 +118,7 @@ nav ul li a:hover {
 }
 
 .cta-btn:hover {
-    background-color: #00a896;
+    background-color: #27ae60;
     transform: translateY(-3px);
 }
 
@@ -136,7 +136,13 @@ nav ul li a:hover {
 
 .secondary-btn:hover {
     background-color: white;
-    color: #003087;
+    color: #1a3c34;
+}
+
+.countdown {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 /* Investments Section */
@@ -192,31 +198,31 @@ nav ul li a:hover {
 .option-card h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #003087;
+    color: #1a3c34;
 }
 
 .option-card p {
-    color: #6b7280;
+    color: #666;
     margin-bottom: 1rem;
 }
 
 .risk-level {
     display: block;
     font-size: 0.9rem;
-    color: #00C4B4;
+    color: #2ecc71;
     margin-bottom: 1.5rem;
     font-weight: 600;
 }
 
 .learn-more {
-    color: #00C4B4;
+    color: #2ecc71;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .learn-more:hover {
-    color: #00a896;
+    color: #27ae60;
     text-decoration: underline;
 }
 
@@ -224,14 +230,35 @@ nav ul li a:hover {
 .dashboard {
     padding: 6rem 3rem;
     text-align: center;
-    background-color: #f9fafb;
+    background-color: #f9f9f9;
 }
 
 .dashboard h1 {
     font-size: 3.5rem;
     font-weight: 800;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
     animation: slideUp 0.8s ease;
+}
+
+.currency-toggle {
+    margin-bottom: 2rem;
+}
+
+.currency-btn {
+    background-color: #e5e7eb;
+    color: #1a3c34;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 0.5rem;
+}
+
+.currency-btn.active, .currency-btn:hover {
+    background-color: #2ecc71;
+    color: white;
 }
 
 .stats-container {
@@ -257,14 +284,18 @@ nav ul li a:hover {
 
 .stat-card h3 {
     font-size: 1.4rem;
-    color: #00C4B4;
+    color: #2ecc71;
     margin-bottom: 1rem;
 }
 
 .stat-card p {
     font-size: 2rem;
     font-weight: 700;
-    color: #003087;
+    color: #1a3c34;
+}
+
+.hidden {
+    display: none;
 }
 
 .pie-chart {
@@ -275,7 +306,7 @@ nav ul li a:hover {
 .pie-chart h3 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    color: #003087;
+    color: #1a3c34;
 }
 
 .chart-image {
@@ -295,7 +326,7 @@ nav ul li a:hover {
 .calculator h3 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    color: #003087;
+    color: #1a3c34;
 }
 
 .calculator input {
@@ -308,7 +339,7 @@ nav ul li a:hover {
 }
 
 .calculator button {
-    background-color: #00C4B4;
+    background-color: #2ecc71;
     color: white;
     padding: 0.8rem 2rem;
     border: none;
@@ -319,31 +350,31 @@ nav ul li a:hover {
 }
 
 .calculator button:hover {
-    background-color: #00a896;
+    background-color: #27ae60;
 }
 
 #result {
     margin-top: 1.5rem;
     font-size: 1.2rem;
-    color: #003087;
+    color: #1a3c34;
 }
 
 /* Footer */
 footer {
-    background-color: #003087;
+    background-color: #1a3c34;
     color: white;
     text-align: center;
     padding: 2rem;
 }
 
 footer a {
-    color: #00C4B4;
+    color: #2ecc71;
     text-decoration: none;
     margin: 0 0.5rem;
 }
 
 footer a:hover {
-    color: #00a896;
+    color: #27ae60;
 }
 
 /* Animations */
