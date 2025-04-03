@@ -71,7 +71,7 @@ nav ul li a:hover {
     background-color: #27ae60;
 }
 
-/* Hero Section */
+/* Hero Section (unchanged from previous) */
 .hero {
     height: 100vh;
     background: linear-gradient(135deg, rgba(26, 60, 52, 0.85), rgba(46, 204, 113, 0.85)), url('algeria-bg.jpg') no-repeat center center / cover;
@@ -151,7 +151,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Vision Section */
+/* Vision Section (unchanged) */
 .vision {
     padding: 5rem 3rem;
     text-align: center;
@@ -182,9 +182,18 @@ nav ul li a:hover {
 .investments h1 {
     font-size: 4rem;
     font-weight: 900;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     color: #1a3c34;
     animation: slideUp 0.8s ease;
+}
+
+.investments .intro {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 4rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .options-container {
@@ -248,12 +257,15 @@ nav ul li a:hover {
     text-decoration: none;
     font-weight: 700;
     font-size: 1.2rem;
-    transition: color 0A.3s ease;
+    padding: 0.8rem 2rem;
+    border: 2px solid #2ecc71;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .learn-more:hover {
-    color: #27ae60;
-    text-decoration: underline;
+    background-color: #2ecc71;
+    color: white;
 }
 
 /* Dashboard Section */
@@ -272,7 +284,7 @@ nav ul li a:hover {
 }
 
 .currency-toggle {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 .currency-btn {
@@ -283,7 +295,7 @@ nav ul li a:hover {
     border-radius: 6px;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
     margin: 0 0.5rem;
 }
 
@@ -303,139 +315,7 @@ nav ul li a:hover {
 .stat-card {
     background-color: white;
     padding: 3rem;
-    width: 260px;
+    width: 280px;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    animation: fadeInUp 0.8s ease forwards;
-}
-
-.stat-card:nth-child(1) { animation-delay: 0.2s; }
-.stat-card:nth-child(2) { animation-delay: 0.4s; }
-.stat-card:nth-child(3) { animation-delay: 0.6s; }
-
-.stat-card h3 {
-    font-size: 1.5rem;
-    color: #2ecc71;
-    margin-bottom: 1.2rem;
-}
-
-.stat-card p {
-    font-size: 2.2rem;
-    font-weight: 800;
-    color: #1a3c34;
-}
-
-.hidden {
-    display: none;
-}
-
-.pie-chart {
-    margin: 0 auto 5rem;
-    max-width: 450px;
-}
-
-.pie-chart h3 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #1a3c34;
-}
-
-.chart-image {
-    max-width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.calculator {
-    background-color: white;
-    padding: 3rem;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.calculator h3 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #1a3c34;
-}
-
-.calculator input {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid #d1d5db;
-    border-radius: 6px;
-    font-size: 1.1rem;
-}
-
-.calculator button {
-    background-color: #2ecc71;
-    color: white;
-    padding: 1rem 3rem;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.calculator button:hover {
-    background-color: #27ae60;
-}
-
-#result {
-    margin-top: 2rem;
-    font-size: 1.4rem;
-    color: #1a3c34;
-    font-weight: 700;
-}
-
-/* Footer */
-footer {
-    background-color: #1a3c34;
-    color: white;
-    text-align: center;
-    padding: 2.5rem;
-}
-
-footer a {
-    color: #2ecc71;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-weight: 600;
-}
-
-footer a:hover {
-    color: #27ae60;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(25px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideUp {
-    from { opacity: 0; transform: translateY(35px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero h1 { font-size: 3rem; }
-    .tagline { font-size: 1.4rem; }
-    .cta-btn, .secondary-btn { padding: 1.2rem 2.5rem; font-size: 1.2rem; }
-    .hero-buttons { flex-direction: column; gap: 1.5rem; }
-    .investments h1, .dashboard h1 { font-size: 3rem; }
-    .option-card, .stat-card { width: 100%; max-width: 90%; margin-bottom: 2.5rem; }
-    nav ul { flex-direction: column; text-align: center; }
-    nav ul li { margin: 1rem 0; }
-    .sticky { padding: 1.2rem; }
-}
+    transition
