@@ -159,4 +159,386 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
-/* Vision Section (
+/* Vision Section (unchanged) */
+.vision {
+    padding: 5rem 3rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.vision h2 {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1a3c34;
+}
+
+.vision p {
+    font-size: 1.5rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Investments Section */
+.investments {
+    padding: 8rem 4rem;
+    text-align: center;
+    background: linear-gradient(180deg, #f5f5f5, #e8ecef);
+}
+
+.investments-header {
+    margin-bottom: 5rem;
+}
+
+.investments h1 {
+    font-size: 4.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1a3c34;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.8s ease;
+}
+
+.investments-header p {
+    font-size: 1.6rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 4rem;
+    justify-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.option-card {
+    position: relative;
+    background: white;
+    padding: 3.5rem;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.option-card:nth-child(1) { animation-delay: 0.2s; }
+.option-card:nth-child(2) { animation-delay: 0.4s; }
+.option-card:nth-child(3) { animation-delay: 0.6s; }
+.option-card:nth-child(4) { animation-delay: 0.8s; }
+
+.option-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.option-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(26, 60, 52, 0.05), rgba(46, 204, 113, 0.05));
+    z-index: 0;
+}
+
+.option-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.option-card h2 {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1a3c34;
+    position: relative;
+    z-index: 1;
+}
+
+.option-card p {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.risk-level {
+    display: block;
+    font-size: 1.1rem;
+    color: #2ecc71;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.invest-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.invest-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Dashboard Section */
+.dashboard {
+    padding: 8rem 4rem;
+    text-align: center;
+    background: linear-gradient(180deg, #fff, #f5f5f5);
+}
+
+.dashboard-header {
+    margin-bottom: 4rem;
+}
+
+.dashboard h1 {
+    font-size: 4.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1a3c34;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.8s ease;
+}
+
+.dashboard-header p {
+    font-size: 1.6rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.currency-toggle {
+    margin-bottom: 3.5rem;
+}
+
+.currency-btn {
+    background: rgba(26, 60, 52, 0.1);
+    color: #1a3c34;
+    padding: 0.8rem 2.5rem;
+    border: 1px solid #1a3c34;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin: 0 0.8rem;
+}
+
+.currency-btn.active, .currency-btn:hover {
+    background: #2ecc71;
+    color: white;
+    border-color: #2ecc71;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 3.5rem;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.stat-card:nth-child(1) { animation-delay: 0.2s; }
+.stat-card:nth-child(2) { animation-delay: 0.4s; }
+.stat-card:nth-child(3) { animation-delay: 0.6s; }
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.stat-card h3 {
+    font-size: 1.6rem;
+    color: #2ecc71;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.stat-card p {
+    font-size: 2.8rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #1a3c34;
+}
+
+.hidden {
+    display: none;
+}
+
+.dashboard-tools {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.pie-chart {
+    flex: 1;
+    min-width: 350px;
+}
+
+.pie-chart h3 {
+    font-size: 2.2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #1a3c34;
+}
+
+.chart-image {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.wealth-projector {
+    flex: 1;
+    min-width: 350px;
+    background: white;
+    padding: 3.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.wealth-projector h3 {
+    font-size: 2.2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #1a3c34;
+}
+
+.projector-inputs {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.wealth-projector input {
+    width: 100%;
+    padding: 1.2rem;
+    border: 1px solid rgba(26, 60, 52, 0.2);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+.wealth-projector input:focus {
+    border-color: #2ecc71;
+    outline: none;
+}
+
+.wealth-projector button {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wealth-projector button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#result {
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    color: #1a3c34;
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #1a3c34, #2ecc71);
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-weight: 600;
+    transition: text-shadow 0.3s ease;
+}
+
+footer a:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 3.5rem; }
+    .tagline { font-size: 1.5rem; }
+    .cta-btn, .secondary-btn { padding: 1.2rem 3rem; font-size: 1.3rem; }
+    .hero-buttons { flex-direction: column; gap: 1.5rem; }
+    .investments, .dashboard { padding: 5rem 2rem; }
+    .investments h1, .dashboard h1 { font-size: 3.5rem; }
+    .investments-header p, .dashboard-header p { font-size: 1.3rem; }
+    .option-card, .stat-card { width: 100%; max-width: 90%; margin-bottom: 3rem; }
+    .dashboard-tools { flex-direction: column; gap: 3rem; }
+    nav ul { flex-direction: column; text-align: center; }
+    nav ul li { margin: 1.2rem 0; }
+    .sticky { padding: 1.5rem 2rem; }
+}
