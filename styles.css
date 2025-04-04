@@ -251,6 +251,12 @@ nav ul li a:hover {
     font-size: 2.8rem;
     font-weight: 800;
     color: #1a3c34;
+    margin-bottom: 1rem;
+}
+
+.login-note {
+    font-size: 1.1rem;
+    color: #4a5568;
     margin-bottom: 2rem;
 }
 
@@ -392,7 +398,7 @@ nav ul li a:hover {
 .invest-btn {
     background: #2ecc71;
     color: #fff;
-    padding: 0.8rem 0rem;
+    padding: 0.8rem 2rem;
     text-decoration: none;
     border-radius: 6px;
     font-size: 1.1rem;
@@ -427,7 +433,7 @@ footer a {
 
 footer a:hover {
     color: #fff;
-    text-shadow: 0 0 8px rgba(255, 255,  255, 0.6);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 /* Animations */
