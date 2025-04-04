@@ -76,7 +76,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     min-height: 85vh;
-    background: linear-gradient(135deg, rgba(26, 60, 52, 0.4), rgba(46, 204, 113, 0.4)), url('https://images.unsplash.com/photo-1618843479313-40f2e4b4e511') no-repeat center center / cover;
+    background: linear-gradient(135deg, rgba(26, 60, 52, 0.4), rgba(46, 204, 113, 0.4)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center / cover;
     color: #fff;
     display: flex;
     align-items: center;
@@ -95,7 +95,7 @@ nav ul li a:hover {
     margin-bottom: 1rem;
     color: #fff;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-    animation: fadeInDown 1s ease;
+    animation: fadeInDown 0.8s ease;
 }
 
 .tagline {
@@ -392,7 +392,7 @@ nav ul li a:hover {
 .invest-btn {
     background: #2ecc71;
     color: #fff;
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 0rem;
     text-decoration: none;
     border-radius: 6px;
     font-size: 1.1rem;
@@ -427,7 +427,7 @@ footer a {
 
 footer a:hover {
     color: #fff;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 8px rgba(255, 255,  255, 0.6);
 }
 
 /* Animations */
