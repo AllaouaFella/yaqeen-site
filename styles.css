@@ -76,7 +76,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     min-height: 85vh;
-    background: linear-gradient(135deg, rgba(26, 60, 52, 0.4), rgba(46, 204, 113, 0.4)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center / cover;
+    background: linear-gradient(135deg, rgba(26, 60, 52, 0.4), rgba(46, 204, 113, 0.4)), url('https://images.unsplash.com/photo-1618843479313-40f2e4b4e511') no-repeat center center / cover;
     color: #fff;
     display: flex;
     align-items: center;
@@ -240,6 +240,73 @@ nav ul li a:hover {
     margin-bottom: 1.5rem;
 }
 
+/* Payment Portal Section */
+.payment-portal {
+    padding: 5rem 2rem;
+    background: #f9fafb;
+    text-align: center;
+}
+
+.payment-portal h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #1a3c34;
+    margin-bottom: 2rem;
+}
+
+.payment-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.payment-form label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2d3748;
+    text-align: left;
+}
+
+.payment-form input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.payment-form input:focus {
+    border-color: #2ecc71;
+}
+
+.pay-btn {
+    background: #2ecc71;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pay-btn:hover {
+    background: #27ae60;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.payment-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
 /* Dashboard Section */
 .dashboard {
     padding: 5rem 2rem;
@@ -388,7 +455,7 @@ footer a:hover {
     .hero h1 { font-size: 2.5rem; }
     .tagline { font-size: 1.2rem; }
     .cta-btn { padding: 0.8rem 2rem; font-size: 1rem; }
-    .insights h2, .dashboard h1 { font-size: 2.2rem; }
+    .insights h2, .dashboard h1, .payment-portal h2 { font-size: 2.2rem; }
     .insight-card, .option-card, .overview-card { padding: 1rem; }
     .insight-image, .option-image { height: 180px; }
     .overview-image { height: 140px; }
@@ -402,5 +469,5 @@ footer a:hover {
     .hero h1 { font-size: 2rem; }
     .tagline { font-size: 1rem; }
     .cta-btn { padding: 0.7rem 1.5rem; font-size: 0.9rem; }
-    .insights, .investments, .dashboard { padding: 3rem 1rem; }
+    .insights, .investments, .dashboard, .payment-portal { padding: 3rem 1rem; }
 }
