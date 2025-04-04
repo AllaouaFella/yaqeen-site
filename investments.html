@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investments - Yaqeen Investments</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/ffffff/money-bag.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,6 +16,8 @@
                 <li><a href="index.html" data-en="Home" data-fr="Accueil">Home</a></li>
                 <li><a href="investments.html" data-en="Investments" data-fr="Investissements">Investments</a></li>
                 <li><a href="dashboard.html" data-en="Dashboard" data-fr="Tableau de bord">Dashboard</a></li>
+                <li><a href="#login" data-en="Login" data-fr="Connexion">Login</a></li>
+                <li><a href="#signup" data-en="Sign Up" data-fr="Inscription">Sign Up</a></li>
                 <li>
                     <select id="language-switcher">
                         <option value="en">English</option>
@@ -35,25 +37,25 @@
         <section class="investments">
             <div class="options-container">
                 <div class="option-card">
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" alt="Manufacturing" class="option-image">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" alt="Manufacturing - A robotic arm in a factory showing innovation" class="option-image">
                     <h2 data-en="Manufacturing" data-fr="Fabrication">Manufacturing</h2>
                     <p data-en="Fuel industrial innovation with strong returns." data-fr="Alimentez l’innovation industrielle avec de solides rendements.">Fuel industrial innovation with strong returns.</p>
                     <a href="#" class="invest-btn" data-en="Invest Now" data-fr="Investir Maintenant">Invest Now</a>
                 </div>
                 <div class="option-card">
-                    <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7" alt="Real Estate" class="option-image">
+                    <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7" alt="Real Estate - A modern building representing timeless assets" class="option-image">
                     <h2 data-en="Real Estate" data-fr="Immobilier">Real Estate</h2>
                     <p data-en="Secure wealth with timeless property assets." data-fr="Sécurisez votre richesse avec des actifs immobiliers intemporels.">Secure wealth with timeless property assets.</p>
                     <a href="#" class="invest-btn" data-en="Invest Now" data-fr="Investir Maintenant">Invest Now</a>
                 </div>
                 <div class="option-card">
-                    <img src="https://images.unsplash.com/photo-1534430480872-3498386e0716" alt="Agriculture" class="option-image">
+                    <img src="https://images.unsplash.com/photo-1534430480872-3498386e0716" alt="Agriculture - A golden field at harvest for sustainable growth" class="option-image">
                     <h2 data-en="Agriculture" data-fr="Agriculture">Agriculture</h2>
                     <p data-en="Support sustainable farming for steady growth." data-fr="Soutenez une agriculture durable pour une croissance stable.">Support sustainable farming for steady growth.</p>
                     <a href="#" class="invest-btn" data-en="Invest Now" data-fr="Investir Maintenant">Invest Now</a>
                 </div>
                 <div class="option-card">
-                    <img src="https://images.unsplash.com/photo-1585435557343-3b0929e91e8a" alt="Health Sector" class="option-image">
+                    <img src="https://images.unsplash.com/photo-1585435557343-3b0929e91e8a" alt="Health Sector - Medical supplies showing healthcare advancement" class="option-image">
                     <h2 data-en="Health Sector" data-fr="Secteur de la Santé">Health Sector</h2>
                     <p data-en="Advance healthcare with impactful returns." data-fr="Faites progresser les soins de santé avec des rendements impactants.">Advance healthcare with impactful returns.</p>
                     <a href="#" class="invest-btn" data-en="Invest Now" data-fr="Investir Maintenant">Invest Now</a>
@@ -62,6 +64,7 @@
         </section>
         <section class="payment-portal">
             <h2 data-en="Ready to Invest? Pay Securely Now!" data-fr="Prêt à investir ? Payez en toute sécurité maintenant !">Ready to Invest? Pay Securely Now!</h2>
+            <p class="login-note" data-en="Please log in or sign up to proceed with your investment." data-fr="Veuillez vous connecter ou vous inscrire pour procéder à votre investissement.">Please log in or sign up to proceed with your investment.</p>
             <form id="payment-form" class="payment-form">
                 <label for="amount" data-en="Investment Amount ($)" data-fr="Montant de l'investissement ($)">Investment Amount ($)</label>
                 <input type="number" id="amount" name="amount" min="100" placeholder="Enter amount" required>
