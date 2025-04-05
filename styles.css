@@ -18,7 +18,7 @@ body {
     top: 0;
     width: 100%;
     background: linear-gradient(135deg, #1a3c34 0%, #2ecc71 100%);
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,9 +29,9 @@ body {
 
 .logo {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 800;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -39,14 +39,14 @@ nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
@@ -82,26 +82,26 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .hero-content {
-    max-width: 700px;
+    max-width: 800px;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: #fff;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
     animation: fadeInDown 0.8s ease;
 }
 
 .tagline {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     color: #f0f4f8;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
@@ -109,10 +109,10 @@ nav ul li a:hover {
 .cta-btn {
     background: #2ecc71;
     color: #fff;
-    padding: 1rem 2.5rem;
+    padding: 1.2rem 3rem;
     text-decoration: none;
-    border-radius: 6px;
-    font-size: 1.2rem;
+    border-radius: 8px;
+    font-size: 1.4rem;
     font-weight: 600;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
@@ -126,30 +126,30 @@ nav ul li a:hover {
 
 /* Insights Section */
 .insights {
-    padding: 5rem 2rem;
+    padding: 6rem 2rem;
     background: #fff;
     text-align: center;
 }
 
 .insights h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 800;
     color: #1a3c34;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     animation: fadeInUp 0.8s ease;
 }
 
 .insights-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 .insight-card {
     background: #fff;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -162,7 +162,7 @@ nav ul li a:hover {
 
 .insight-image {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1.5rem;
@@ -174,36 +174,36 @@ nav ul li a:hover {
 }
 
 .insight-card h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: #2ecc71;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 .insight-card p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #4a5568;
     margin-bottom: 1.5rem;
 }
 
 /* Investments Section */
 .investments {
-    padding: 5rem 2rem;
+    padding: 6rem 2rem;
     background: #fff;
     text-align: center;
 }
 
 .options-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 .option-card {
     background: #fff;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -216,7 +216,7 @@ nav ul li a:hover {
 
 .option-image {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1.5rem;
@@ -228,56 +228,60 @@ nav ul li a:hover {
 }
 
 .option-card h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: #1a3c34;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 .option-card p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #4a5568;
     margin-bottom: 1.5rem;
 }
 
 /* Payment Portal Section */
 .payment-portal {
-    padding: 5rem 2rem;
+    padding: 6rem 2rem;
     background: #f9fafb;
     text-align: center;
 }
 
 .payment-portal h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 800;
     color: #1a3c34;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .login-note {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #4a5568;
     margin-bottom: 2rem;
 }
 
 .payment-form {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .payment-form label {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: #2d3748;
     text-align: left;
 }
 
 .payment-form input {
-    padding: 0.8rem;
-    font-size: 1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
     border: 1px solid #e2e8f0;
     border-radius: 6px;
     outline: none;
@@ -291,10 +295,10 @@ nav ul li a:hover {
 .pay-btn {
     background: #2ecc71;
     color: #fff;
-    padding: 1rem;
+    padding: 1.2rem;
     border: none;
-    border-radius: 6px;
-    font-size: 1.2rem;
+    border-radius: 8px;
+    font-size: 1.4rem;
     font-weight: 600;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -308,37 +312,37 @@ nav ul li a:hover {
 }
 
 .payment-note {
-    margin-top: 1rem;
-    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
     color: #4a5568;
 }
 
 /* Dashboard Section */
 .dashboard {
-    padding: 5rem 2rem;
+    padding: 6rem 2rem;
     background: #f9fafb;
     text-align: center;
 }
 
 .dashboard h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 800;
     color: #1a3c34;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     animation: fadeInUp 0.8s ease;
 }
 
 .dashboard-overview {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.5rem;
+    max-width: 1300px;
+    margin: 0 auto 4rem;
 }
 
 .overview-card {
     background: #fff;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -351,10 +355,10 @@ nav ul li a:hover {
 
 .overview-image {
     width: 100%;
-    height: 160px;
+    height: 180px;
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     transition: filter 0.3s ease;
 }
 
@@ -363,28 +367,28 @@ nav ul li a:hover {
 }
 
 .overview-card h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: #2ecc71;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 .overview-card p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #1a3c34;
 }
 
 .portfolio-details {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 .portfolio-details h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #1a3c34;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .chart-image {
@@ -398,10 +402,10 @@ nav ul li a:hover {
 .invest-btn {
     background: #2ecc71;
     color: #fff;
-    padding: 0.8rem 2rem;
+    padding: 1rem 2.5rem;
     text-decoration: none;
-    border-radius: 6px;
-    font-size: 1.1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
     font-weight: 600;
     display: inline-block;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
@@ -414,13 +418,90 @@ nav ul li a:hover {
     box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
 }
 
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.modal-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a3c34;
+    margin-bottom: 1.5rem;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.modal-content label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.modal-content input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    outline: none;
+}
+
+.modal-content button {
+    background: #2ecc71;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.modal-content button:hover {
+    background: #27ae60;
+}
+
 /* Footer */
 footer {
     background: linear-gradient(135deg, #1a3c34 0%, #2ecc71 100%);
     color: #fff;
     text-align: center;
-    padding: 2rem;
-    font-size: 0.9rem;
+    padding: 2.5rem;
+    font-size: 1rem;
 }
 
 footer a {
@@ -454,26 +535,26 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .sticky { padding: 0.8rem 1.5rem; }
-    .logo { font-size: 1.5rem; }
-    nav ul { gap: 1rem; }
+    .sticky { padding: 1rem 1.5rem; }
+    .logo { font-size: 1.6rem; }
+    nav ul { gap: 1.5rem; }
     nav ul li a { font-size: 0.9rem; }
-    .hero h1 { font-size: 2.5rem; }
-    .tagline { font-size: 1.2rem; }
-    .cta-btn { padding: 0.8rem 2rem; font-size: 1rem; }
-    .insights h2, .dashboard h1, .payment-portal h2 { font-size: 2.2rem; }
-    .insight-card, .option-card, .overview-card { padding: 1rem; }
-    .insight-image, .option-image { height: 180px; }
-    .overview-image { height: 140px; }
-    .insight-card h3, .option-card h2 { font-size: 1.4rem; }
-    .overview-card h3 { font-size: 1.2rem; }
-    .overview-card p { font-size: 1.6rem; }
+    .hero h1 { font-size: 3rem; }
+    .tagline { font-size: 1.4rem; }
+    .cta-btn { padding: 1rem 2rem; font-size: 1.2rem; }
+    .insights h2, .dashboard h1, .payment-portal h2 { font-size: 2.5rem; }
+    .insight-card, .option-card, .overview-card { padding: 1.5rem; }
+    .insight-image, .option-image { height: 200px; }
+    .overview-image { height: 160px; }
+    .insight-card h3, .option-card h2 { font-size: 1.6rem; }
+    .overview-card h3 { font-size: 1.4rem; }
+    .overview-card p { font-size: 1.8rem; }
 }
 
 @media (max-width: 480px) {
-    .hero { padding: 1.5rem; }
-    .hero h1 { font-size: 2rem; }
-    .tagline { font-size: 1rem; }
-    .cta-btn { padding: 0.7rem 1.5rem; font-size: 0.9rem; }
-    .insights, .investments, .dashboard, .payment-portal { padding: 3rem 1rem; }
+    .hero { padding: 2rem; }
+    .hero h1 { font-size: 2.2rem; }
+    .tagline { font-size: 1.2rem; }
+    .cta-btn { padding: 0.8rem 1.5rem; font-size: 1rem; }
+    .insights, .investments, .dashboard, .payment-portal { padding: 4rem 1rem; }
 }
