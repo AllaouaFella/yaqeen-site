@@ -16,10 +16,10 @@
                 <li><a href="index.html" data-en="Home" data-fr="Accueil">Home</a></li>
                 <li><a href="investments.html" data-en="Investments" data-fr="Investissements">Investments</a></li>
                 <li><a href="dashboard.html" data-en="Dashboard" data-fr="Tableau de bord">Dashboard</a></li>
-                <li><a href="#login" data-en="Login" data-fr="Connexion">Login</a></li>
-                <li><a href="#signup" data-en="Sign Up" data-fr="Inscription">Sign Up</a></li>
+                <li><a href="#" class="login-link" data-en="Login" data-fr="Connexion">Login</a></li>
+                <li><a href="#" class="signup-link" data-en="Sign Up" data-fr="Inscription">Sign Up</a></li>
                 <li>
-                    <select id="language-switcher">
+                    <select id="language-switcher" aria-label="Select Language">
                         <option value="en">English</option>
                         <option value="fr">Français</option>
                     </select>
@@ -32,7 +32,7 @@
             <h1 data-en="Your Wealth at a Glance" data-fr="Votre Richesse en un Coup d’Œil">Your Wealth at a Glance</h1>
             <div class="dashboard-overview">
                 <div class="overview-card">
-                    <img src="https://images.unsplash.com/photo-1561414927-6d86591d0c4f" alt="Portfolio Value - A secure vault representing tangible wealth" class="overview-image">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322621c712d8" alt="Portfolio Value - Gold bars representing tangible wealth" class="overview-image">
                     <h3 data-en="Portfolio Value" data-fr="Valeur du Portefeuille">Portfolio Value</h3>
                     <p class="currency-value" data-usd="12000" data-dzd="1620000">$12,000</p>
                 </div>
@@ -60,6 +60,32 @@
     <footer>
         <p>© 2025 Yaqeen Investments | <a href="#" data-en="About" data-fr="À propos">About</a> | <a href="#" data-en="Contact" data-fr="Contact">Contact</a></p>
     </footer>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 data-en="Login" data-fr="Connexion">Login</h2>
+            <form id="login-form">
+                <label for="email" data-en="Email" data-fr="Email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="password" data-en="Password" data-fr="Mot de passe">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <button type="submit" data-en="Login" data-fr="Connexion">Login</button>
+            </form>
+        </div>
+    </div>
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 data-en="Sign Up" data-fr="Inscription">Sign Up</h2>
+            <form id="signup-form">
+                <label for="signup-email" data-en="Email" data-fr="Email">Email</label>
+                <input type="email" id="signup-email" name="signup-email" placeholder="Enter your email" required>
+                <label for="signup-password" data-en="Password" data-fr="Mot de passe">Password</label>
+                <input type="password" id="signup-password" name="signup-password" placeholder="Create a password" required>
+                <button type="submit" data-en="Sign Up" data-fr="Inscription">Sign Up</button>
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
